@@ -16,9 +16,11 @@
 
 ## 在线试听
 
-直接打开下面的链接即可播放（需联网加载 CDN 音频）：
+播放页由网页托管服务（返回 `text/html`）提供，直接打开即可播放（音频仍走 jsDelivr CDN，需联网）：
 
-> https://cdn.jsdelivr.net/gh/nebula-fangyi/vf-music@main/index.html
+> https://3818c03d07a64fb7a47ca1d6bfa206c1.gz1.agentos-app.net
+
+> ⚠️ 不要把 `index.html` 放到 jsDelivr 的 `/gh/` 路径托管——它会以 `Content-Type: text/plain` 返回，浏览器只显示源码、无法播放。音频（`.mp3`）走 CDN 不受影响。如需自有域名/更稳定的托管，可改用 GitHub Pages 或对象存储静态网站。
 
 ## 目录结构
 
